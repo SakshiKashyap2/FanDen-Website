@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import fan from './assests/FanDen.jpg';
+import fan from '../assests/FanDen.jpg';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const [clicked, setClicked] = useState(false);
@@ -18,27 +19,32 @@ const Nav = () => {
       <div>
         <ul id="navbar" className={clicked ? "active" : ""}>
           <li>
-            <a className="active" href="index.html">
+            <Link className="active" to="/">
               Home
-            </a>
+            </Link>
           </li>
 
           <li>
-            <a href="index.html">Skills</a>
+            <Link to="/">Skills</Link>
           </li>
 
           <li>
-            <a href="index.html">News</a>
+            <Link to="/">News</Link>
           </li>
 
           <li>
-            <a href="index.html">Projects</a>
+            <Link to="/">Projects</Link>
           </li>
 
           <li>
-            <a href="index.html">
+            <Link to="/login">
               <button className='btn'>LogIn</button>
-            </a>
+            </Link>
+          </li>
+          <li>
+            <Link to="/signup">
+              <button className='btn'>Signup</button>
+            </Link>
           </li>
         </ul>
       </div>
