@@ -8,6 +8,7 @@ import Login from './components/loginsignup/Login'
 import Footer from './components/footer';
 import Slider from './components/carousel';
 import Event from './components/events/Event';
+import Review from './components/Review';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Nav />,
             <Slider/>,
             <Event/>,
+            <Review />
             <Footer/>          
           ]} />
         <Route exact path='/login' element={<Login />} />
