@@ -26,7 +26,7 @@ const Signup = () => {
     }
 
     useEffect(() => {
-        validregis && axios.post('http://localhost:5001/api/user/login', loginbodyParameters)
+        validregis && axios.post('https://fanden-backend-phfp.onrender.com/api/user/login', loginbodyParameters)
             .then(data => {
                 settoken(data.data.accessToken)
 
