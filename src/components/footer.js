@@ -28,8 +28,8 @@ export default function App() {
           <a href='' className='me-4 text-reset'>
             <MDBIcon fab icon="github" />
           </a>
-        </div>.
-		
+        </div>
+
       </section>
 
       <section className=''>
