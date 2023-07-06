@@ -1,77 +1,125 @@
-import React from "react";
-import {
-Box,
-Container,
-Row,
-Column,
-FooterLink,
-Heading,
-} from "./FooterStyles";
+import React from 'react';
+import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
 
-const Footer = () => {
-return (
-	<Box>
-	<h1 style={{ color: "green",
-				textAlign: "center",
-				marginTop: "-50px" }}>
-		FanDen India : Experience sport like never before
-	</h1>
-	<Container>
-		<Row>
-		<Column>
-			<Heading>About Us</Heading>
-			<FooterLink href="#">Aim</FooterLink>
-			<FooterLink href="#">Vision</FooterLink>
-			<FooterLink href="#">Testimonials</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Services</Heading>
-			<FooterLink href="#">Cricket</FooterLink>
-			<FooterLink href="#">Football</FooterLink>
-			<FooterLink href="#">Hockey</FooterLink>
-			<FooterLink href="#">Kabbadi</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Venues</Heading>
-			<FooterLink href="#">Pune</FooterLink>
-			<FooterLink href="#">Mumbai</FooterLink>
-			<FooterLink href="#">Indore</FooterLink>
-			<FooterLink href="#">Greater Noida</FooterLink>
-		</Column>
-		<Column>
-			<Heading>Social Media</Heading>
-			<FooterLink href="#">
-			<i className="fab fa-facebook-f">
-				<span style={{ marginLeft: "10px" }}>
-				Facebook
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-instagram">
-				<span style={{ marginLeft: "10px" }}>
-				Instagram
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-twitter">
-				<span style={{ marginLeft: "10px" }}>
-				Twitter
-				</span>
-			</i>
-			</FooterLink>
-			<FooterLink href="#">
-			<i className="fab fa-youtube">
-				<span style={{ marginLeft: "10px" }}>
-				Youtube
-				</span>
-			</i>
-			</FooterLink>
-		</Column>
-		</Row>
-	</Container>
-	</Box>
-);
-};
-export default Footer;
+export default function App() {
+  return (
+    <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
+      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+        <div className='me-5 d-none d-lg-block'>
+          <span>Get connected with us on social networks:</span>
+        </div>
+
+        <div>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon fab icon="facebook-f" />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon fab icon="twitter" />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon fab icon="google" />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon fab icon="instagram" />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon fab icon="linkedin" />
+          </a>
+          <a href='' className='me-4 text-reset'>
+            <MDBIcon fab icon="github" />
+          </a>
+        </div>.
+		
+      </section>
+
+      <section className=''>
+        <MDBContainer className='text-center text-md-start mt-5'>
+          <MDBRow className='mt-3'>
+            <MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>
+                <MDBIcon icon="gem" className="me-3" />
+                Fanden India
+              </h6>
+              <p>
+			  Experience sport like never before
+              </p>
+            </MDBCol>
+
+            <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Tickets</h6>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Cricket
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Football
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Hockey
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Vollyball
+                </a>
+              </p>
+            </MDBCol>
+
+            <MDBCol md="3" lg="2" xl="2" className='mx-auto mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Ticket
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Settings
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Orders
+                </a>
+              </p>
+              <p>
+                <a href='#!' className='text-reset'>
+                  Help
+                </a>
+              </p>
+            </MDBCol>
+
+            <MDBCol md="4" lg="3" xl="3" className='mx-auto mb-md-0 mb-4'>
+              <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
+              <p>
+                <MDBIcon icon="home" className="me-2" />
+                Mumbai,111111,INDIA
+              </p>
+              <p>
+                <MDBIcon icon="envelope" className="me-3" />
+                fandenindia@gmail.com
+              </p>
+              <p>
+                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+              </p>
+              <p>
+                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+              </p>
+            </MDBCol>
+          </MDBRow>
+        </MDBContainer>
+      </section>
+
+      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+        © 2021 Copyright:
+        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
+          FandenIndia
+        </a>
+      </div>
+    </MDBFooter>
+  );
+}

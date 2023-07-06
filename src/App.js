@@ -1,3 +1,4 @@
+import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import './App.css';
 import Nav from './components/nav';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
