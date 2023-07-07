@@ -7,12 +7,11 @@ import { ReactComponent as Circle } from './assests/circle-solid.svg';
 const inactiveColour = 'hsla(221, 0%, 88%, 0.81)';
 const activeColour = 'hsla(221, 0%, 49%, 0.98)';
 
-const Carousel = () => {
+const Review = () => {
   const [leftCard, setLeftCard] = useState(0);
   const [activeIndex, setActiveIndex] = useState(0);
   const [rightCard, setRightCard] = useState(0);
   const [arrayLength, setArrayLength] = useState(0);
-  const [showSidebar, setShowSidebar] = useState(false);
 
   useEffect(() => {
     const length = getLength();
@@ -26,13 +25,6 @@ const Carousel = () => {
     }
   }, []);
 
-  useEffect(() => {
-    if (arrayLength > 300) {
-      setShowSidebar(true);
-    } else {
-      setShowSidebar(false);
-    }
-  }, [arrayLength]);
 
   const getLength = () => {
     let length = 0;
@@ -67,7 +59,7 @@ const Carousel = () => {
   };
 
   const trackerArray = [];
-  for (let i = 0; i < arrayLength; i++) {
+  for (let i = 0; i <arrayLength; i++) {
     if (i === activeIndex) {
       trackerArray.push(
         <div className="circle">
@@ -85,9 +77,7 @@ const Carousel = () => {
 
   return (
     <div className="carousel-container">
-      <div className="sidebar-container" style={{ display: showSidebar ? 'block' : 'none' }}>
-      </div>
-      <div className="cards">
+          <div className="cards">
         <div className="card leftCard">
           <img className="avatars" src={items[leftCard].imgSrc} alt="avatar" />
           <div className="text">
@@ -104,10 +94,11 @@ const Carousel = () => {
             <h3 className="name">{items[activeIndex].name}</h3>
             <i className="position">{items[activeIndex].position}</i>
             <p className="testimony">{items[activeIndex].quote}</p>
-          </div>
+          
           <div className="arrow-container">
             <ArrowLeft className="arrow arrow-left" fill="hsla(221, 0%, 49%, 0.98)" onClick={activatePreviousSlide}></ArrowLeft>
             <ArrowRight className="arrow arrow-right" fill="hsla(221, 0%, 49%, 0.98)" onClick={activateNextSlide}></ArrowRight>
+          </div>
           </div>
         </span>
       </div>
@@ -129,4 +120,4 @@ const Carousel = () => {
 );
 
 }
-export default Carousel;
+export default Review;
