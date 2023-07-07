@@ -24,14 +24,15 @@ export const items = [
         status: "active",
         imgSrc: "https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8bWFuJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60",
         name: "Sniffer",
-        position: "Guide Dog",
+        position: "Guide",
         quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam rem cum voluptatibus explicabo rerum reiciendis pariatur dolores dolorem harum recusandae."
     },
     {
         status: "inactive",
         imgSrc: "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1hbiUyMGZhY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1000&q=60",
         name: "Trixie",
-        position: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nobis dicta vero excepturi, laboriosam error aut. Nesciunt provident cum facere?"
+        position: "Engineer",
+        quote: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nobis dicta vero excepturi, laboriosam error aut. Nesciunt provident cum facere?"
     }
 ];
 
