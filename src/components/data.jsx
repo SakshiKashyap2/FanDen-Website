@@ -11,7 +11,7 @@ export const items = [
         imgSrc: "https://images.unsplash.com/photo-1591084728795-1149f32d9866?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWFuJTIwZmFjZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=1000&q=60",
         name: "Hammy",
         position: "Lunchtime Leader", 
-        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem quae facere nisi cupiditate porro asperiores accusantium, est animi nemo excepturi? Deserunt, exercitationem et explicabo blanditiis sit harum ipsum sequi, nesciunt repellat omnis, ea distinctio"
+        quote: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam voluptatem quae facere nisi cupiditate porro asperiores accusantium, est animi nemo excepturi? Deserunt, exercitationem et explicabo blanditiis sit harum ipsum sequi"
     },
     {
         status: "inactive",
