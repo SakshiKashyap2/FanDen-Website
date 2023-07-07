@@ -3,14 +3,12 @@
 body {
   text-align: center;
   margin: 0 auto;
-  font-family: "Poppins", "sans-serif";
-  background-color: rgba(0, 0, 0, 0.4);}
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(0, 0, 0, 0.4);
+}
 
-@media screen and (max-width: 700px) {
-  .leftCard {
-    display: none;
-  }
-
+@media screen and (max-width: 1200px) {
+  .leftCard,
   .rightCard {
     display: none;
   }
@@ -22,7 +20,7 @@ body {
 }
 
 .avatars {
-   border-radius: 50%;
+  border-radius: 50%;
   height: 100px;
   width: 100px;
   margin-top: -6em;
@@ -30,7 +28,6 @@ body {
 
 .cards {
   display: flex;
-
   width: 100%;
 }
 
@@ -40,9 +37,8 @@ body {
   padding: 2em;
   width: 35%;
   height: 200px;
-  flex: 1; 
+  flex: 1;
   box-shadow: 6px 6px 17px 1px rgba(0, 0, 0, 0.36);
-  -webkit-box-shadow: 6px 6px 17px 1px rgba(0, 0, 0, 0.36);
 }
 
 .leftCard {
@@ -57,11 +53,10 @@ body {
 
 .active {
   z-index: 1;
-  height: 300px;
+  height: 350px;
   background-image: url("./assests/quote-left.svg"), url("./assests/quote-right.svg");
   background-repeat: no-repeat;
-  background-position-x: 0, right;
-  background-position-y: 0, bottom;
+  background-position: left top, right bottom;
   background-size: 40px;
   background-origin: content-box;
 }
@@ -71,7 +66,16 @@ body {
   justify-content: space-between;
   margin-top: -7em;
   position: relative;
+} 
+
+.arrow {
+  height: 3em;
 }
+
+.arrow:active {
+  fill: #1c6a01;
+}
+
 
 .arrow {
   height: 3em;
@@ -92,7 +96,7 @@ p {
 
 .text {
   height: 90%;
-  overflow: hidden;
+    /* overflow: hidden;   */
 }
 
 .tracker {
@@ -125,17 +129,3 @@ p {
 .viewAll:active {
   background-color: grey;
 }
-
-.sidebar-container {
-    width: 300px;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 50%;
-    transform: translateX(50%);
-    background-color: #f2f2f2;
-    overflow-y: auto;
-    padding: 20px;
-  }
-  
-  
