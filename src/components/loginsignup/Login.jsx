@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Login.css'
 import axios from 'axios'
 import LoginPage from './LoginPage'
-import logo from '../../assests/logo.jpeg'
+import logo from '/workspaces/FanDen-Website/src/components/assests/FanDen.jpg'
 
 const Login = () => {
 

@@ -1,3 +1,5 @@
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
 import 'mdb-react-ui-kit/dist/css/mdb.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -9,6 +11,8 @@ import Footer from './components/footer';
 import Slider from './components/carousel';
 import Event from './components/events/Event';
 import Review from './components/Review';
+import PreviousNextMethods from './components/pastevents';
+
 
 function App() {
   return (
@@ -16,11 +20,23 @@ function App() {
     <BrowserRouter>
       <Routes>
           <Route exact path='/' element={[
-            <Nav />,
-            <Slider/>,
-            <Event/>,
-            <Review />
+            <>
+            <Nav />
+            <div style={{ marginBottom: '50px' }}>
+              <Slider />
+            </div>
+            
+            <div style={{ marginTop: '50px',marginBottom: '50px' }}>
+              <Event />
+            </div>
+            <div style={{ marginTop: '50px',marginBottom: '50px' }}>
+              <PreviousNextMethods/>
+            </div>
+            <div style={{ marginTop: '50px',marginBottom: '50px' }}>
+                <Review/>
+              </div>
             <Footer/>          
+          </>         
           ]} />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/signup' element={<Signup />} />
