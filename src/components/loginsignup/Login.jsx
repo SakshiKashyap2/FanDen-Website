@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './Login.css'
 import axios from 'axios'
 import LoginPage from './LoginPage'
-import logo from '/workspaces/FanDen-Website/src/components/assests/FanDen.jpg'
+import fan from '../assests/FanDen.jpg';
 
 const Login = () => {
 
@@ -42,11 +42,11 @@ const Login = () => {
           <div className="container mx-auto flex bg-black  items-center  text-green-700 h-[100%]">
             <div className="flex  flex-col sm:flex-row justify-center mx-auto items-center login bg-white md:h-[60vh] min-h-[420px]">
               <div className="img w-full md:w-1/2 h-[50%] sm:h-[100%] ">
-                <img src={logo} alt="" className='h-[100%] object-fill w-[35%] mx-auto my-4 sm:my-0 sm:mx-4 md:mx-0 sm:w-[100%]' />
+                <img src={fan} alt="" className='h-[100%] object-fill w-[35%] mx-auto  sm:my-0 sm:mx-4 md:mx-0 sm:w-[100%]' />
               </div>
               {/* <div className='h-full w-1/2'> */}
 
-              <div className=" flex flex-col bg-white justify-center py-4 md:py-0 px-12 w-full md:w-1/2 ">
+              <div className=" flex flex-col bg-white justify-center py-4 md:py-0 px-12 w-full md:w-1/2 text-left">
                   <div className="text-3xl  font-bold">Sign In </div>
                   <div className="font-semibold py-4">Not a member? Start a 14 day free trial</div>
 

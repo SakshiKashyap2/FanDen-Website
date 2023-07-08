@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import './Login.css'
 import axios from 'axios'
 import LoginPage from './LoginPage'
+import fan from '../assests/FanDen.jpg'
+
 
 
 const Signup = () => {
@@ -59,10 +61,10 @@ const Signup = () => {
                 <div className='h-[100vh] bg-black'>
                     <div className="container mx-auto  flex items-center  text-green-700 h-[100%]">
                         <div className="flex justify-center mx-auto items-center login bg-white h-[60vh]">
-                            <div className="img md:w-1/2 h-[50%] md:h-[100%]">
-                                <img src="https://i0.wp.com/fanden.in/wp-content/uploads/2022/11/WhatsApp-Image-2022-10-15-at-2.21.34-AM.jpeg?fit=900%2C900&ssl=1" alt="" className='h-[100%] object-fill' />
+                            <div className="img w-full md:w-1/2 h-[50%] md:h-[100%]">
+                                <img src={fan} alt="" className='h-[100%] object-fill' />
                             </div>
-                            <div className=" flex flex-col  justify-center px-12 md:w-1/2">
+                            <div className=" flex flex-col  justify-center px-12 md:w-1/2 text-left">
                                 <div className="text-3xl font-bold my-8">Sign Up </div>
                                 
                                 <label htmlFor="username" className='font-semibold'>Username</label>

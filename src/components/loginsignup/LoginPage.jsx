@@ -29,13 +29,15 @@ const LoginPage = ({ token }) => {
     // console.log(details)
     return (
         <>
-
-            <div className='bg-white h-[100vh]'>
-                User Page
+            <div className=' bg-white h-[100vh]'>
+                
+            <div className=' container text-left'>
+                <div>User Page</div>
                 <div>
                     {JSON.stringify(details)}
                 </div>
             </div>
+</div>
         </>
 
     )

@@ -21,22 +21,22 @@ function App() {
       <Routes>
           <Route exact path='/' element={[
             <>
-            <Nav />
-            <div style={{ marginBottom: '50px' }}>
-              <Slider />
-            </div>
-            
-            <div style={{ marginTop: '50px',marginBottom: '50px' }}>
-              <Event />
-            </div>
-            <div style={{ marginTop: '50px',marginBottom: '50px' }}>
-              <PreviousNextMethods/>
-            </div>
-            <div style={{ marginTop: '50px',marginBottom: '50px' }}>
-                <Review/>
+              <Nav />
+              <div style={{ marginBottom: '50px' }}>
+                <Slider />
               </div>
-            <Footer/>          
-          </>         
+
+              <div style={{ marginTop: '50px', marginBottom: '50px' }}>
+                <Event />
+              </div>
+              <div style={{ marginTop: '50px', marginBottom: '50px' }}>
+                <PreviousNextMethods />
+              </div>
+              <div style={{ marginTop: '50px', marginBottom: '50px' }}>
+                <Review />
+              </div>
+              <Footer />
+            </>         
           ]} />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/signup' element={<Signup />} />
