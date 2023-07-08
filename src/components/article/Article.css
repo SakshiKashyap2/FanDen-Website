@@ -1,0 +1,64 @@
+
+  .App-header {
+    background-color: #282c34;
+    padding: 20px;
+    color: white;
+  }
+  
+  .App-content {
+    margin-top: 20px;
+  }
+  
+  .App-footer {
+    margin-top: 40px;
+    padding: 10px;
+    background-color: #282c34;
+    color: white;
+  }
+  
+  .error-message {
+    color: red;
+  }
+  
+  .article-form {
+    padding-top: 100px;
+    max-width: 400px;
+    padding-top: 200px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .article-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .article-form input,
+  .article-form select,
+  .article-form textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 4px;
+  }
+  
+  .article-form button {
+    padding: 8px 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .article-display {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+  }
+  
+  .article-display p {
+    margin-top: 10px;
+  }
+  
