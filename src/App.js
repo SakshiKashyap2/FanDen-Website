@@ -12,8 +12,8 @@ import Slider from './components/carousel';
 import Event from './components/events/Event';
 import Review from './components/Review';
 import PreviousNextMethods from './components/pastevents';
-import MainContent from './components/article/MainContent';
-
+//import MainContent from './components/article/MainContent';
+import Post from "./components/post/post";
 
 
 function App() {
@@ -35,9 +35,9 @@ function App() {
                 <PreviousNextMethods />
               </div>
               <div style={{ marginTop: '50px', marginBottom: '50px' }}>
-                <MainContent />
+              <Post />
               </div>
-              <div style={{ marginTop: '50px', marginBottom: '50px' }}>
+              <div style={{ marginTop: '', marginBottom: '50px' }}>
                 <Review />
               </div>
               <Footer />
