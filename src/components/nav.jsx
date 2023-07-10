@@ -19,21 +19,21 @@ const Nav = () => {
       <div>
         <ul id="navbar" className={clicked ? "active" : ""}>
           <li>
-            <Link className="active" to="/">
+            <a className="active" href="/">
               Home
             </Link>
           </li>
 
           <li>
-            <Link to="/">Skills</Link>
+            <a href="/">Skills</a>
           </li>
 
           <li>
-            <Link to="/">News</Link>
+            <a href="/">News</a>
           </li>
 
           <li>
-            <Link to="/">Projects</Link>
+            <a href="/">Projects</a>
           </li>
 
           <li>
