@@ -1,5 +1,11 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import pic from '/workspaces/FanDen-Website/src/components/assests/eventspics.jpg';
+import e2 from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2022-10-07 at 3.21.48 PM.jpeg';
+import e3 from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2023-03-05 at 10.33.36 PM.jpeg';
+import e4 from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2022-09-26 at 3.32.43 PM (2).jpeg';
+
+
 
 export default class PreviousNextMethods extends Component {
   constructor(props) {
@@ -49,45 +55,54 @@ export default class PreviousNextMethods extends Component {
         <h2 style={{ fontFamily: "Algerian" }}>PAST EVENTS</h2>
         <Slider ref={c => (this.slider = c)} {...settings}>
         <div key={1}>
-            <video className="d-block w-100" controls style={{ height: "300px" }}>
-                <source
-                src="https://www.youtube.com/watch?v=fbO_0AbkUOg&t=85s&ab_channel=IndianFootball" 
-                type="video/mp4"
-                />
-                
-            </video>
+        <img className="d-block w-100"
+          src={e4}
+          alt="First slide"
+          style={{ height: "300px" }} 
+          />
         </div>
           <div key={1}>
           <img className="d-block w-100"
-          src="https://i.pinimg.com/736x/56/2c/f2/562cf2c800bf4c7b1106b31250a86ffb.jpg"
+          src={e2}
           alt="First slide"
           style={{ height: "300px" }} 
           />
           </div>
           <div key={2}>
           <img className="d-block w-100"
-          src="https://i.ytimg.com/vi/PNf4L-ok7aA/maxresdefault.jpg"
+          src={e3}
           alt="Second Slide"
           style={{ height: "300px" }} 
           />
           </div>
           <div key={3}>
-            <video className="d-block w-100" controls style={{ height: "300px" ,}}>
-                <source
-                src="https://www.example.com/path/to/video.mp4" 
-                type="video/mp4"
-                />
-                
-            </video>
+          <img className="d-block w-100"
+          src={e4}
+          alt="Second Slide"
+          style={{ height: "300px" }}
+          />
         </div>
           <div key={4} >
-            <h3>4</h3>
+          <img className="d-block w-100"
+          src={pic}
+          alt="Second Slide"
+          style={{ height: "300px" }}
+          />
+
           </div>
           <div key={5} >
-            <h3>5</h3>
+          <img className="d-block w-100"
+          src={e2}
+          alt="Second Slide"
+          style={{ height: "300px" }}
+          />
           </div>
           <div key={6} >
-            <h3>6</h3>
+          <img className="d-block w-100"
+          src={e3}
+          alt="Second Slide"
+          style={{ height: "300px" }}
+          />
           </div>
         </Slider>
         
