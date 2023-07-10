@@ -21,7 +21,7 @@ const Nav = () => {
           <li>
             <a className="active" href="/">
               Home
-            </Link>
+            </a>
           </li>
 
           <li>
