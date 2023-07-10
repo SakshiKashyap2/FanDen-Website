@@ -29,15 +29,15 @@ nav {
   position: relative;
 }
 
-  #navbar li Link {
+  #navbar-link {
   text-decoration: none;
   font-size: 1.3rem;
   font-weight: 600;
   color: #000000;
   transition: 0.3s ease-in-out;
 }
-#navbar li Link:hover,
-#navbar li Link.active {
+#navbar-link:hover,
+#navbar-link.active {
   color: #1c6a01;
 }
 
@@ -61,8 +61,8 @@ nav {
 
 
 
-#navbar li Link:hover::after,
-#navbar li Link.active::after {
+#navbar-link:hover::after,
+#navbar-link.active::after {
   content: "";
   width: 30%;
   height: 2px;
