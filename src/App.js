@@ -11,7 +11,8 @@ import Footer from './components/footer';
 import Slider from './components/carousel';
 import Event from './components/events/Event';
 import Review from './components/Review';
-import PreviousNextMethods from './components/pastevents';
+import PreviousNextMethods from './components/pastevent/pastevents';
+
 //import MainContent from './components/article/MainContent';
 import Post from "./components/post/post";
 

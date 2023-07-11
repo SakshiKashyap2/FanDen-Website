@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+
+
 import e1 from '/workspaces/FanDen-Website/src/components/assests/IMG_0781.jpg';
 import e2 from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2022-10-07 at 3.21.48 PM.jpeg';
 import e3 from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2023-03-05 at 10.33.36 PM.jpeg';
@@ -46,7 +48,7 @@ export default class PreviousNextMethods extends Component {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 200,
+      autoplaySpeed: 300,
       evArrow: (
         <button className="slick-prev" onClick={this.previous} style={{ color: "black" }}>
           Previous
@@ -135,7 +137,7 @@ export default class PreviousNextMethods extends Component {
           alt="Second Slide"
           style={{ height: "300px" }}
           />
-          <div className="slider-text" style={textStyle}>Image for About Us/Vision page</div>
+          <div className="slider-text" style={textStyle}>Argentina vs Croatia- World Cup</div>
           </div>
         </Slider>
         

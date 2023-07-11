@@ -25,15 +25,15 @@ const Nav = () => {
           </li>
 
           <li>
-            <a href="/">Skills</a>
+            <a href="/">About Us</a>
           </li>
 
           <li>
-            <a href="/">News</a>
+            <a href="/">Sports Articles</a>
           </li>
 
           <li>
-            <a href="/">Projects</a>
+            <a href="/events">Past Events</a>
           </li>
 
           <li>
@@ -41,11 +41,7 @@ const Nav = () => {
               <button className='btn'>LogIn</button>
             </Link>
           </li>
-          <li>
-            <Link to="/signup">
-              <button className='btn'>Signup</button>
-            </Link>
-          </li>
+          
         </ul>
       </div>
 
