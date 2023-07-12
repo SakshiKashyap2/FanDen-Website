@@ -12,9 +12,11 @@ const Nav = () => {
 
   return (
     <nav>
+      <Link to='/'>
       <div className="logo">
         <img src={fan} alt="" />
       </div>
+      </Link>
 
       <div>
         <ul id="navbar" className={clicked ? "active" : ""}>

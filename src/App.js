@@ -7,8 +7,9 @@ import Nav from './components/nav';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from './components/loginsignup/Signup'
 import Login from './components/loginsignup/Login'
+import PastEventPage from './components/pastevent/events'
 import Footer from './components/footer';
-import Slider from './components/carousel';
+import VerticalMode from './components/carousel';
 import Event from './components/events/Event';
 import Review from './components/Review';
 import PreviousNextMethods from './components/pastevent/pastevents';
@@ -24,9 +25,10 @@ function App() {
       <Routes>
           <Route exact path='/' element={[
             <>
-              <Nav />
-              <div style={{ marginBottom: '50px' }}>
-                <Slider />
+            
+               <Nav />
+               <div style={{ marginTop:'100px', marginBottom: '50px' }}>
+                <VerticalMode />
               </div>
 
               <div style={{ marginTop: '50px', marginBottom: '50px' }}>
@@ -44,6 +46,7 @@ function App() {
               <Footer />
             </>         
           ]} />
+        <Route exact path='/events' element={<PastEventPage />} />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/signup' element={<Signup />} />
       

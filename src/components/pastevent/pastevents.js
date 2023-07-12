@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
+import { MDBRipple } from 'mdb-react-ui-kit';
+import { Link } from 'react-router-dom';
 
 
 import e1 from '/workspaces/FanDen-Website/src/components/assests/IMG_0781.jpg';
@@ -28,7 +30,10 @@ export default class PreviousNextMethods extends Component {
   previous() {
     this.slider.slickPrev();
   }
+
   render() {
+  
+
     const textStyle = {
         
         bottom: "0",
@@ -40,6 +45,7 @@ export default class PreviousNextMethods extends Component {
         color: "white",
         padding: "10px"
       };
+  
     const settings = {
       className: "center",
       centerMode: true,
@@ -48,17 +54,8 @@ export default class PreviousNextMethods extends Component {
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 300,
-      evArrow: (
-        <button className="slick-prev" onClick={this.previous} style={{ color: "black" }}>
-          Previous
-        </button>
-      ),
-      nextArrow: (
-        <button className="slick-next" onClick={this.next} style={{ color: "black" }}>
-          Next
-        </button>
-      ),
+      autoplaySpeed: 1000,
+    
       responsive: [
         {
           breakpoint: 768,
@@ -68,77 +65,111 @@ export default class PreviousNextMethods extends Component {
         }
       ]
     };
-
+    
+    
 
     return (
       <div style={{ textAlign: "center" }}>
         <h2 style={{ fontFamily: "Algerian" }}>PAST EVENTS</h2>
+        
         <Slider ref={c => (this.slider = c)} {...settings}>
-        <div key={0}>
-        <img className="d-block w-100"
+      <MDBRipple rippleTag='div' className='bg-image hover-overlay hover-zoom hover-shadow'>
+        <div key={0} >
+              <Link to="/events">
+              <img className="d-block w-100"
           src={e1}
           alt="First slide"
           style={{ height: "300px" }} 
           />
-          <div className="slider-text" style={textStyle}>Manchester Derby in Malad0
-          </div>
+          </Link>
+      
+          <div className="slider-text" style={textStyle}>Manchester Derby in Malad0</div>
         </div>
-          <div key={1}>
+      </MDBRipple>
+      <MDBRipple rippleTag='div' className='bg-image hover-overlay hover-zoom hover-shadow'>
+          <div key={1} >
+          <Link to="/events">
           <img className="d-block w-100"
           src={e2}
           alt="First slide"
           style={{ height: "300px" }} 
           />
+          </Link>
           <div className="slider-text" style={textStyle}>Manchester Derby in Malad,World Cup in Andheri</div>
           </div>
-          <div key={2}>
+      </MDBRipple>
+      <MDBRipple rippleTag='div' className='bg-image hover-overlay hover-zoom hover-shadow'>
+          <div key={2} >
+          <Link to="/events">
           <img className="d-block w-100"
           src={e3}
           alt="Second Slide"
           style={{ height: "300px" }} 
           />
+          </Link>
           <div className="slider-text" style={textStyle}>Monza in Bandra2</div>
           </div>
-          <div key={3}>
+      </MDBRipple>
+      <MDBRipple rippleTag='div' className='bg-image hover-overlay hover-zoom hover-shadow'>
+          <div key={3} >
+          <Link to="/events">
           <img className="d-block w-100"
           src={e4}
           alt="Second Slide"
           style={{ height: "300px" }}
           />
+          </Link>
           <div className="slider-text" style={textStyle}>El Clasico in Bandra</div>
         </div>
+      </MDBRipple>
+      <MDBRipple rippleTag='div' className='bg-image hover-overlay hover-zoom hover-shadow'>
           <div key={4} >
+          <Link to="/events">
           <img className="d-block w-100"
           src={e5}
           alt="Second Slide"
           style={{ height: "300px" }}
           />
+          </Link>
           <div className="slider-text" style={textStyle}>United vs Arsenal in Indiranagar</div>
           </div>
+      </MDBRipple>
+      <MDBRipple rippleTag='div' className='bg-image hover-overlay hover-zoom hover-shadow'>
           <div key={5} >
+          <Link to="/events">
           <img className="d-block w-100"
           src={e6}
           alt="Second Slide"
           style={{ height: "300px" }}
           />
+          </Link>
           <div className="slider-text" style={textStyle}>United vs Liverpool in Malad</div>
           </div>
+      </MDBRipple>
+      <MDBRipple rippleTag='div' className='bg-image hover-overlay hover-zoom hover-shadow'>
           <div key={6} >
+          <Link to="/events">
           <img className="d-block w-100"
           src={e7}
           alt="Second Slide"
           style={{ height: "300px" }}
           />
+          </Link>
           <div className="slider-text" style={textStyle}>Der Klassiker in Saki Naka</div>
           </div>
+      </MDBRipple>
+      <MDBRipple rippleTag='div' className='bg-image hover-overlay hover-zoom hover-shadow'>
           <div key={7} >
+          <Link to="/events">
           <img className="d-block w-100"
           src={e8}
           alt="Second Slide"
           style={{ height: "300px" }}
           />
+          </Link>
           <div className="slider-text" style={textStyle}>Argentina vs Croatia- World Cup</div>
           </div>
+      </MDBRipple>
         </Slider>
         
       </div>

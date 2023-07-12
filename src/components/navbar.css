@@ -9,7 +9,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   background: #fbfcfb;
-  padding: 20px 80px;
+  padding: 5px 80px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   padding-left: 150px;
   padding-right: 150px;
@@ -21,8 +21,8 @@ nav {
 }
 
 .logo img {
-  height: 80px;
-  width: auto ;
+  height: 54px;
+  width: 100px ;
 }
 
 #navbar {
