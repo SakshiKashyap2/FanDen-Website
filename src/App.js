@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Signup from './components/loginsignup/Signup'
 import Login from './components/loginsignup/Login'
 import PastEventPage from './components/pastevent/events'
+import Aboutus from './components/aboutus';
 import Footer from './components/footer';
 import VerticalMode from './components/carousel';
 import Event from './components/events/Event';
@@ -22,12 +23,13 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    <Nav />
       <Routes>
           <Route exact path='/' element={[
             <>
             
-               <Nav />
-               <div style={{ marginTop:'100px', marginBottom: '50px' }}>
+               
+               <div style={{ marginTop:'80px', marginBottom: '50px' }}>
                 <VerticalMode />
               </div>
 
@@ -43,14 +45,16 @@ function App() {
               <div style={{ marginTop: '', marginBottom: '50px' }}>
                 <Review />
               </div>
-              <Footer />
+              
             </>         
           ]} />
         <Route exact path='/events' element={<PastEventPage />} />
+        <Route exact path='/aboutus' element={<Aboutus />} />
         <Route exact path='/login' element={<Login />} />
         <Route exact path='/signup' element={<Signup />} />
       
-      </Routes> 
+      </Routes>
+      <Footer /> 
     </BrowserRouter>
  
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import fan from './assests/FanDen.jpg';
+import fan from './assests/logo.jpg';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {
@@ -27,7 +27,7 @@ const Nav = () => {
           </li>
 
           <li>
-            <a href="/">About Us</a>
+            <a href="/aboutus">About Us</a>
           </li>
 
           <li>

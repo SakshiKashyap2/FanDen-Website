@@ -1,9 +1,9 @@
 import React from 'react';
 // import Carousel from 'react-bootstrap/Carousel';
 import a from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2022-10-09 at 12.10.36 PM.jpeg'
-import b from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2023-02-27 at 12.39.21 AM.jpeg'
-import c from '/workspaces/FanDen-Website/src/components/assests/P1020786.JPG'
-import d from '/workspaces/FanDen-Website/src/components/assests/FanDen.jpg'
+import b from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2022-10-31 at 9.02.39 AM.jpeg'
+import c from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2022-09-26 at 3.32.43 PM.jpeg'
+import d from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2023-02-27 at 12.39.21 AM.jpeg'
 import { Component } from "react";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
@@ -50,7 +50,7 @@ export default class VerticalMode extends Component {
           style={{ height: "500px" }} 
           />
           </Link>
-          <div className="slider-text" style={textStyle}>Manchester Derby in Malad0</div>
+          <div className="slider-text" style={textStyle}>FandenIndia</div>
         </div>
         <div key={1} >
         <Link to="/events">
@@ -60,7 +60,7 @@ export default class VerticalMode extends Component {
           style={{ height: "500px" }} 
           />
           </Link>
-          <div className="slider-text" style={textStyle}>Manchester Derby in Malad0</div>
+          <div className="slider-text" style={textStyle}>A</div>
         </div>
         <div key={2} >
         <Link to="/events">
@@ -70,7 +70,7 @@ export default class VerticalMode extends Component {
           style={{ height: "500px" }} 
           />
           </Link>
-          <div className="slider-text" style={textStyle}>Manchester Derby in Malad0</div>
+          <div className="slider-text" style={textStyle}>B</div>
         </div>
         <div key={3} >
         <Link to="/events">
@@ -80,7 +80,7 @@ export default class VerticalMode extends Component {
           style={{ height: "500px" }} 
           />
           </Link>
-          <div className="slider-text" style={textStyle}>Manchester Derby in Malad0</div>
+          <div className="slider-text" style={textStyle}>C</div>
         </div>
         <div key={4} >
         <Link to="/events">
@@ -90,7 +90,7 @@ export default class VerticalMode extends Component {
           style={{ height: "500px" }} 
           />
           </Link>
-          <div className="slider-text" style={textStyle}>Manchester Derby in Malad0</div>
+          <div className="slider-text" style={textStyle}>D</div>
         </div>
         <div key={5} >
         <Link to="/events">
@@ -100,7 +100,7 @@ export default class VerticalMode extends Component {
           style={{ height: "500px" }} 
           />
           </Link>
-          <div className="slider-text" style={textStyle}>Manchester Derby in Malad0</div>
+          <div className="slider-text" style={textStyle}>E</div>
         </div>
         </Slider>
       </div>

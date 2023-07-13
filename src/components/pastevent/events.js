@@ -18,7 +18,7 @@ import e8 from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image
 
 
 
-export default class PreviousNextMethods extends Component {
+export default class PastEventPage extends Component {
   constructor(props) {
     super(props);
     this.next = this.next.bind(this);
