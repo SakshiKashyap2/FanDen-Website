@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
-import fan from './assests/FanDen.jpg';
+import fan from './assests/logo2.png';
 import { Link } from 'react-router-dom';
 
 const Nav = () => {

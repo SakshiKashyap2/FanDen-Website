@@ -22,7 +22,8 @@ nav {
 
 .logo img {
   height: auto;
-  width: 100px ;
+  width: 130px ;
+  background-color: #000000;
 }
 
 #navbar {
