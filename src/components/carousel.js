@@ -47,7 +47,7 @@ export default class VerticalMode extends Component {
         <img className="d-block w-100"
           src={d}
           alt="First slide"
-          style={{ height: "500px" }} 
+          style={{height:"650px"}} 
           />
           </Link>
           <div className="slider-text" style={textStyle}>FandenIndia</div>
@@ -57,7 +57,7 @@ export default class VerticalMode extends Component {
         <img className="d-block w-100"
           src={b}
           alt="First slide"
-          style={{ height: "500px" }} 
+          style={{ height: "650px" }} 
           />
           </Link>
           <div className="slider-text" style={textStyle}>A</div>
@@ -67,7 +67,7 @@ export default class VerticalMode extends Component {
         <img className="d-block w-100"
           src={c}
           alt="First slide"
-          style={{ height: "500px" }} 
+          style={{ height: "650px" }} 
           />
           </Link>
           <div className="slider-text" style={textStyle}>B</div>
@@ -77,7 +77,7 @@ export default class VerticalMode extends Component {
         <img className="d-block w-100"
           src={a}
           alt="First slide"
-          style={{ height: "500px" }} 
+          style={{ height: "650px" }} 
           />
           </Link>
           <div className="slider-text" style={textStyle}>C</div>
@@ -87,7 +87,7 @@ export default class VerticalMode extends Component {
         <img className="d-block w-100"
           src={b}
           alt="First slide"
-          style={{ height: "500px" }} 
+          style={{ height: "650px" }} 
           />
           </Link>
           <div className="slider-text" style={textStyle}>D</div>
@@ -97,7 +97,7 @@ export default class VerticalMode extends Component {
         <img className="d-block w-100"
           src={c}
           alt="First slide"
-          style={{ height: "500px" }} 
+          style={{ height: "650px" }} 
           />
           </Link>
           <div className="slider-text" style={textStyle}>E</div>
