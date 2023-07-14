@@ -4,6 +4,9 @@ import a from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 
 import b from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2022-10-31 at 9.02.39 AM.jpeg'
 import c from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2022-09-26 at 3.32.43 PM.jpeg'
 import d from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2023-02-27 at 12.39.21 AM.jpeg'
+import e from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2023-02-27 at 12.39.21 AM.jpeg'
+
+
 import { Component } from "react";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
@@ -95,7 +98,7 @@ export default class VerticalMode extends Component {
         <div key={5} >
         <Link to="/events">
         <img className="d-block w-100"
-          src={c}
+          src={e}
           alt="First slide"
           style={{ height: "650px" }} 
           />
