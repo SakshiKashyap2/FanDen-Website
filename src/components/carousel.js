@@ -2,8 +2,8 @@ import React from 'react';
 // import Carousel from 'react-bootstrap/Carousel';
 import a from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2022-10-09 at 12.10.36 PM.jpeg'
 import b from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2023-02-27 at 12.39.21 AM.jpeg'
-import c from '/workspaces/FanDen-Website/src/components/assests/P1020786.JPG'
-import d from '/workspaces/FanDen-Website/src/components/assests/FanDen.jpg'
+import c from '/workspaces/FanDen-Website/src/components/assests/WhatsApp Image 2022-10-31 at 9.02.39 AM - Copy.jpeg'
+import d from '/workspaces/FanDen-Website/src/components/assests/logo2.png'
 import { Component } from "react";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
