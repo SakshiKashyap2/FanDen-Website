@@ -58,6 +58,7 @@ const Sports = () => {
 
       <div ref={footballRef}>
       <div className="FootBall">
+         <h2>FootBall Section</h2>
         <div className="news1">
         <h3>Uncertainty Surrounds Harry Kane's Future as Top Clubs Circle</h3>
             <img src="https://3.bp.blogspot.com/-NHoMPXSJf2s/XncWccZRtTI/AAAAAAAAT70/DCubSE27CQUR0NxoCn4nNdO33-NJfILKgCLcBGAsYHQ/s6400/Harry%252BKane%252BTottenham%252BHotspur%252BLiverpool.jpg" alt="" />
