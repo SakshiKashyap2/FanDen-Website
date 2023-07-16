@@ -16,7 +16,7 @@ import Review from './components/Review';
 import PreviousNextMethods from './components/pastevent/pastevents';
 
 //import MainContent from './components/article/MainContent';
-import Post from "./components/post/post";
+import News from "./components/news/news";
 
 
 function App() {
