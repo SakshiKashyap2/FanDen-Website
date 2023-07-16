@@ -33,14 +33,14 @@ function App() {
                 <VerticalMode />
               </div>
 
-              <div style={{ marginTop: '50px', marginBottom: '50px' }}>
+              <div style={{ marginTop: '0px', marginBottom: '0px' }}>
                 <Event />
               </div>
-              <div style={{ marginTop: '50px', marginBottom: '50px' }}>
+              <div style={{ marginTop: '0px', marginBottom: '0px' }}>
                 <PreviousNextMethods />
               </div>
-              <div style={{ marginTop: '50px', marginBottom: '50px' }}>
-              <Post />
+              <div style={{ marginTop: '0px', marginBottom: '0px' }}>
+              <News />
               </div>
               <div style={{ marginTop: '', marginBottom: '50px' }}>
                 <Review />
