@@ -31,7 +31,7 @@ const Nav = () => {
           </li>
 
           <li>
-            <a href="/">Sports Articles</a>
+            <a href="/sports">Sports Articles</a>
           </li>
 
           <li>
