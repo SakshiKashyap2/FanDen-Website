@@ -69,9 +69,6 @@ body {
   .news1 img , .news2 img{
     height: 255px;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   
