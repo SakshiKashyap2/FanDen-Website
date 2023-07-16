@@ -17,7 +17,7 @@ import PreviousNextMethods from './components/pastevent/pastevents';
 
 //import MainContent from './components/article/MainContent';
 import News from "./components/news/news";
-
+import Sports from './components/sports';
 
 function App() {
   return (
@@ -48,6 +48,8 @@ function App() {
               
             </>         
           ]} />
+            
+       <Route exact path = '/sports' element={<Sports />} />
         <Route exact path='/events' element={<PastEventPage />} />
         <Route exact path='/aboutus' element={<Aboutus />} />
         <Route exact path='/login' element={<Login />} />
