@@ -17,6 +17,8 @@ body {
 .carousel-container {
   display: flex;
   flex-flow: column;
+  padding-top: 200px;
+  background-color: black;
 }
 
 .avatars {
@@ -36,7 +38,7 @@ body {
   background-color: #fbfbfa;
   padding: 2em;
   width: 35%;
-  height: 200px;
+  height: 170px;
   flex: 1;
   box-shadow: 6px 6px 17px 1px rgba(0, 0, 0, 0.36);
 }
@@ -128,4 +130,11 @@ p {
 
 .viewAll:active {
   background-color: grey;
+}
+
+@media screen and (max-width: 780px){
+  .fan {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
 }
