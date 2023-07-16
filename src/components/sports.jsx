@@ -2,7 +2,6 @@ import React, { useState, useRef} from 'react';
 import './sports.css';
 import Nav from './nav';
 import photosData from './sportsdata';
-import Footer from './footer';
 
 
 
@@ -161,7 +160,7 @@ Surrounded by former teammates Dwyane Wade, Carmelo Anthony, and Kentavious Cald
 
       </div>
       </div>
-          <Footer />
+          
       </div>
      
       
