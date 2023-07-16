@@ -19,6 +19,7 @@ import PreviousNextMethods from './components/pastevent/pastevents';
 import News from "./components/news/news";
 import Sports from './components/sports';
 
+
 function App() {
   return (
     <>
