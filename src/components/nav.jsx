@@ -3,11 +3,28 @@ import './navbar.css';
 import fan from './assests/logo2.png';
 import { Link } from 'react-router-dom';
 
-const Nav = () => {
+const Nav = ({ cartItems }) => {
   const [clicked, setClicked] = useState(false);
 
   const handleClick = () => {
     setClicked(!clicked);
+  };
+
+
+  const getTotalItem = () => {
+    if (!Array.isArray(cartItems)) return 0;
+
+    let totalItems = 0;
+    for (const item of cartItems) {
+      totalItems += item.quantity;
+    }
+    return totalItems;
+  };
+
+  const navigate = useNavigate();
+
+  const redirectToCart = () => {
+    navigate('/CartPage');
   };
 
   return (
@@ -42,6 +59,12 @@ const Nav = () => {
             <Link to="/login">
               <button className='btn'>LogIn</button>
             </Link>
+          </li>
+
+           <li>
+          <button className="btn" onClick={redirectToCart}>
+          <h2><i class="fa-solid fa-cart-shopping"></i> {getTotalItem()}</h2>
+          </button>
           </li>
           
         </ul>
