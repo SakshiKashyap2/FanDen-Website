@@ -18,6 +18,9 @@ import PreviousNextMethods from './components/pastevent/pastevents';
 //import MainContent from './components/article/MainContent';
 import News from "./components/news/news";
 import Sports from './components/sports';
+import Pages from "./components/Store/Pages";
+import Main from "./components/Store/Main";
+import CartPage from "./components/Store/CartPage";
 
 
 function App() {
@@ -40,6 +43,9 @@ function App() {
               <div style={{ marginTop: '0px', marginBottom: '0px' }}>
                 <PreviousNextMethods />
               </div>
+              <div style={{ marginTop: '20px', marginBottom: '20px' }}>
+              <Pages />
+              </div>
               <div style={{ marginTop: '0px', marginBottom: '0px' }}>
               <News />
               </div>
@@ -49,7 +55,10 @@ function App() {
               
             </>         
           ]} />
+
             
+         <Route exact path='/Main' element={<Main />}  />
+        <Route path="/cart" component={<CartPage />} />
        <Route exact path = '/sports' element={<Sports />} />
         <Route exact path='/events' element={<PastEventPage />} />
         <Route exact path='/aboutus' element={<Aboutus />} />
