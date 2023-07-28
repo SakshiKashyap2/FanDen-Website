@@ -2,6 +2,9 @@ import React, { useState } from 'react';
 import './navbar.css';
 import fan from './assests/logo2.png';
 import { Link } from 'react-router-dom';
+import Main from './Store/Main'
+import CartPage from './Store/CartPage';
+import { useNavigate } from 'react-router-dom';
 
 const Nav = ({ cartItems }) => {
   const [clicked, setClicked] = useState(false);
